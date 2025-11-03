@@ -14,3 +14,10 @@
 ##
 ![Output Program](DELETE-movies1.png)
 ### Dapat menghapus data film ID=1
+
+## Tugas week 9 lanjutan mini project, menambahkan authentifikasi pada express
+## Fitur utama
+- registrasi user baru
+- login user dan generate token
+- proteksi endpoint "movies" hanya bisa diakses user login
+- middleware logger, validate, dan error handler
