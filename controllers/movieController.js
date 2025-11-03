@@ -16,7 +16,7 @@ export async function getMovie(req, res, next) {
 }
 
 export async function createNewMovie(req, res, next) {
-  console.log("Body dari request:", req.body); // ✅ HARUS di dalam fungsi
+  console.log("Body dari request:", req.body);
   try {
     const newMovie = await Movie.createMovie(req.body);
     res.status(201).json(newMovie);
@@ -24,6 +24,7 @@ export async function createNewMovie(req, res, next) {
     next(err);
   }
 }
+
 
 export async function editMovie(req, res, next) {
   try {
